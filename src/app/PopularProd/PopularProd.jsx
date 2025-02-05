@@ -12,6 +12,7 @@ export default function PopularProd() {
     { value: "insectiside", name: "Insectiside" },
     { value: "herbicide", name: "Herbicide" },
     { value: "fungicide", name: "Fungicide" },
+    { value: "plant", name: "NPK" },
     { value: "cow", name: "Cow Feeds" },
   ];
   const [selType, setSelType] = React.useState("");
