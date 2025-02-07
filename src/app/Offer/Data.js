@@ -4,20 +4,20 @@ const DataOffer = [
     title: "Best Deal",
     discount: "5% To 18%",
     sub: "Save upto",
-    imageURL: "/ban1.png",
+    imageURL: "/img/pg-removebg-preview.png",
   },
   {
     title: "Limited  Offer",
     discount: "5% To 10%",
     sub: "Save upto",
-    imageURL: "/ban2.png",
+    imageURL: "/img/plantGrowth-removebg-preview.png",
   },
 
   {
     title: "Best Price",
     discount: "5% To 16%",
     sub: "Starting",
-    imageURL: "/ban3.png",
+    imageURL: "/img/organic-removebg-preview.png",
   },
 ];
 
