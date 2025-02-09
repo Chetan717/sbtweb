@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { ProTypeRed } from "../Redux/Slice/ProductTypeSlice";
 import { setLastIndex } from "../Redux/Slice/LoadMore";
 
-export default function PopularProd() {
+export default function PopularProd({selType, setSelType}) {
   const dispatch = useDispatch();
   const img = [
     { value: "", name: "All" },
@@ -16,8 +16,7 @@ export default function PopularProd() {
     { value: "plant", name: "NPK" },
     { value: "cow", name: "Cow Feeds" },
   ];
-  const [selType, setSelType] = React.useState("organic");
-
+  
   useEffect(() => {
     handleSelectType("organic");
   }, []);
