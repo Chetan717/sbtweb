@@ -15,7 +15,7 @@ const DataOffer = [
 
   {
     title: "Best Price",
-    discount: "16%",
+    discount: "10%",
     sub: "Starting",
     imageURL: "/img/organic-removebg-preview.png",
   },
