@@ -1,5 +1,5 @@
 import Hero from "./CompUtils/Hero.tsx/Hero";
-import React, { useEffect } from "react";
+import React from "react";
 import PopularProd from "./PopularProd/PopularProd";
 import Categoriespro from "./Featuresutils/Categories";
 import Offer from "../app/Offer/Offer";
