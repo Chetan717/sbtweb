@@ -1,14 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { ProTypeRed } from "../Redux/Slice/ProductTypeSlice";
+import { setLastIndex } from "../Redux/Slice/LoadMore";
+
 export default function Categoriespro() {
+  const handleSelectType = (selectedType) => {
+    dispatch(ProTypeRed(selectedType));
+    dispatch(setLastIndex(8));
+  };
+
   const img = [
-    { src: "/img/brands/soil.png", name: "Soil Health" },
-    { src: "/img/plant.png", name: "Plant Growth" },
-    { src: "/img/insectiside.png", name: "Insectiside" },
-    { src: "/img/pestiside.png", name: "Herbi/Fungi/side" },
-    { src: "/img/ferti.png", name: "Organic Fertilizers" },
-    { src: "/img/cow.png", name: "Cow Feeds" },
+    { src: "/img/brands/soil.png", name: "Soil Health", value: "organic" },
+    { src: "/img/plant.png", name: "Plant Growth", value: "plant" },
+    { src: "/img/insectiside.png", name: "Insectiside", value: "insectiside" },
+    { src: "/img/pestiside.png", name: "Herbi/Fungi/side", value: "herbicide" },
+    { src: "/img/ferti.png", name: "Organic Fertilizers", value: "organic" },
+    { src: "/img/cow.png", name: "Cow Feeds", value: "cow" },
   ];
 
   return (
@@ -18,7 +27,7 @@ export default function Categoriespro() {
           {img.map((i) => {
             return (
               <>
-                <Link href="#prod">
+                <Link onClick={() => handleSelectType(i.value)} href="#prod">
                   <div
                     key={i.src}
                     className="flex flex-col gap-2 justify-center items-center"
