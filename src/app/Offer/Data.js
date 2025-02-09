@@ -9,7 +9,7 @@ const DataOffer = [
   {
     title: "Limited  Offer",
     discount: "10%",
-    sub: "Save upto",
+    sub: "SaveUpto",
     imageURL: "/img/plantGrowth-removebg-preview.png",
   },
 
