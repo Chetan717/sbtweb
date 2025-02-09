@@ -27,8 +27,9 @@ export default function Categoriespro() {
           {img.map((i) => {
             return (
               <>
-                <Link onClick={() => handleSelectType(i.value)} href="#prod">
+                <Link  href="#prod">
                   <div
+             onClick={() => handleSelectType(i.value)}
                     key={i.src}
                     className="flex flex-col gap-2 justify-center items-center"
                   >
