@@ -15,6 +15,7 @@ export default function PopularProd({selType, setSelType}) {
     { value: "fungicide", name: "Fungicide" },
     { value: "plant", name: "NPK" },
     { value: "cow", name: "Cow Feeds" },
+    { value: "oxide_based", name: "Oxide Based" },
   ];
   
   useEffect(() => {
