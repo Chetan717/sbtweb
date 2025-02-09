@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { ProTypeRed } from "../Redux/Slice/ProductTypeSlice";
 import { setLastIndex } from "../Redux/Slice/LoadMore";
 
-export default function Categoriespro() {
+export default function Categoriespro({selType, setSelType}) {
   const dispatch = useDispatch(); // Fix missing dispatch
   
 useEffect(() => {
@@ -16,6 +16,7 @@ useEffect(() => {
   
   const handleSelectType = (selectedType) => {
     dispatch(ProTypeRed(selectedType));
+    setSelType(selectedType);
     dispatch(setLastIndex(8));
   };
 
