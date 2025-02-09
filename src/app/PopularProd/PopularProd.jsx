@@ -15,7 +15,7 @@ export default function PopularProd() {
     { value: "plant", name: "NPK" },
     { value: "cow", name: "Cow Feeds" },
   ];
-  const [selType, setSelType] = React.useState("");
+  const [selType, setSelType] = React.useState("Organic");
   const SelectType = (selType) => {
     dispatch(ProTypeRed(selType));
     dispatch(setLastIndex(8));
