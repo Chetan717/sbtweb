@@ -3,9 +3,11 @@ import React from "react";
 import PopularProd from "./PopularProd/PopularProd";
 import Categoriespro from "./Featuresutils/Categories";
 import Offer from "../app/Offer/Offer";
-import { ToastContainer, toast } from "react-toastify";
-export default function page() {
+import { ToastContainer } from "react-toastify";
+
+export default function Page() { // ✅ Rename "page" to "Page"
   const [selType, setSelType] = React.useState("organic");
+
   return (
     <>
       <ToastContainer
