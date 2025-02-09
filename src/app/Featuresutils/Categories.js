@@ -9,7 +9,11 @@ import { setLastIndex } from "../Redux/Slice/LoadMore";
 
 export default function Categoriespro() {
   const dispatch = useDispatch(); // Fix missing dispatch
-
+  
+useEffect(() => {
+    handleSelectType("organic");
+  }, []);
+  
   const handleSelectType = (selectedType) => {
     dispatch(ProTypeRed(selectedType));
     dispatch(setLastIndex(8));
