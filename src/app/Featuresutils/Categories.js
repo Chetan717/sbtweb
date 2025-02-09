@@ -21,7 +21,7 @@ useEffect(() => {
 
   const img = [
     { src: "/img/brands/soil.png", name: "Soil Health", value: "organic" },
-    { src: "/img/plant.png", name: "Plant Growth", value: "plant" },
+    { src: "/img/plant.png", name: "NPK BIO Fertilizer", value: "plant" },
     { src: "/img/insectiside.png", name: "Insectiside", value: "insectiside" },
     { src: "/img/pestiside.png", name: "Herbi/Fungi/side", value: "herbicide" },
     { src: "/img/ferti.png", name: "Organic Fertilizers", value: "organic" },
