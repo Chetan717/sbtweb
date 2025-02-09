@@ -1,12 +1,14 @@
+"use client"; // ✅ Add this at the top
+
+import React, { useState } from "react";
 import Hero from "./CompUtils/Hero.tsx/Hero";
-import React from "react";
 import PopularProd from "./PopularProd/PopularProd";
 import Categoriespro from "./Featuresutils/Categories";
 import Offer from "../app/Offer/Offer";
 import { ToastContainer } from "react-toastify";
 
-export default function Page() { // ✅ Rename "page" to "Page"
-  const [selType, setSelType] = React.useState("organic");
+export default function Page() {
+  const [selType, setSelType] = useState("organic");
 
   return (
     <>
